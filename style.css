@@ -16,37 +16,39 @@ body{
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 100px 0;
 }
 
 .container{
     display: flex;
     flex-direction: column;
     width: 25%;
-    height: 90vh;
-    margin: 20px 0;
+    gap: 30px;
     border-radius: 20px;
     background-color: hsl(0, 0%, 100%);
+    padding-block: 30px 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-/* .image{
-    justify-content: center;
-} */
+.image{
+    width: 80%;
+    margin-inline: auto;
+}
 
 
 
 img{
-    width: 317px;
-    height: 320px;
-    border-radius: 30px;
-    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
     margin: 0;
 }
 
 .h3, .para{
+    width: 80%;
+    margin-inline: auto;
     text-align: center;
-    margin: 10px 0;
-    padding: 0 20px;
 }
 
 h3{
@@ -60,8 +62,23 @@ p{
 .attribution {
     font-size: 11px;
     text-align: center;
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .attribution a {
     color: hsl(228, 45%, 44%);
   }
+
+  @media (max-width:1200px) {
+    .container{
+        width: 40%;
+    }
+}
   
+@media (max-width:767px) {
+    .container{
+        width: 80%;
+    }
+}

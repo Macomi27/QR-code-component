@@ -22,10 +22,10 @@ body{
     display: flex;
     flex-direction: column;
     width: 25%;
-    gap: 30px;
+    gap: 20px;
     border-radius: 20px;
     background-color: hsl(0, 0%, 100%);
-    padding-block: 30px 40px;
+    padding-block: 17px 30px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -33,7 +33,7 @@ body{
 }
 
 .image{
-    width: 80%;
+    width: 90%;
     margin-inline: auto;
 }
 
@@ -42,7 +42,6 @@ body{
 img{
     width: 100%;
     border-radius: 10px;
-    margin: 0;
 }
 
 .h3, .para{
@@ -53,10 +52,13 @@ img{
 
 h3{
     color: hsl(218, 44%, 22%);
+    font-size: 20px;
 }
 
 p{
     color: hsl(220, 15%, 55%);
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .attribution {
